@@ -1,0 +1,18 @@
+@import "_scaffolding.scss",
+        "_mixin.scss";
+
+@import "./header/_header.scss";
+
+@import "./main/_main.scss",
+        "./main/constructions/_constructions.scss",
+        "./main/constructions/easily-discarded/_easily-discarded.scss",
+        "./main/constructions/translucent/_translucent.scss",
+        "./main/constructions/facade/_facade.scss";
+
+@import "./main/documentation/_documentation.scss";
+
+@import "./main/work-performed/_work-performed.scss";
+
+@import "./footer/_footer.scss",
+        "./footer/contact/_contact.scss",
+        "./footer/copyright/_copyright.scss";

@@ -1,0 +1,14 @@
+.documentation {
+  padding: 20px;
+  &__title {
+    @include title;
+  }
+
+  &__preview {
+    @include image__container;
+  }
+
+  &__item {
+    @include image__item;
+  }
+}

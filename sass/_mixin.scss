@@ -1,0 +1,26 @@
+@mixin title {
+  margin-bottom: 15px;
+    font-size: 24px;
+    line-height: 26px;
+    color: black;
+}
+
+@mixin description {
+    margin: 0 15px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 22px;
+    color: black;
+}
+
+@mixin image__container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px 0;
+}
+
+@mixin image__item {
+  margin: 0 15px;
+  margin-bottom: 30px;
+};

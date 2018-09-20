@@ -1,0 +1,10 @@
+.translucent {
+  padding-top: 15px;
+  margin-bottom: 25px;
+  &__title {
+    @include title;
+  }
+  &__text {
+    @include description;
+  }
+}

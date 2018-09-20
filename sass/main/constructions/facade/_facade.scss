@@ -1,0 +1,9 @@
+.facade {
+  padding-top: 15px;
+  &__title {
+    @include title;
+  }
+  &__text {
+    @include description;
+  }
+}

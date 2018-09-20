@@ -1,0 +1,37 @@
+@font-face {
+  font-family: "exo";
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+  src: url('../fonts/exo-2-regular.woff2') format('woff2'),
+  url('../fonts/exo-2-regular.woff') format('woff');
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "exo", sans-serif;
+  background: url("../img/bg-1.png") center;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}

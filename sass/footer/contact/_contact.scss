@@ -1,0 +1,16 @@
+.contact {
+  &__title {
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+  &__text {
+    margin: 0;
+    margin-bottom: 8px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  &__tel,
+  &__mail {
+    color: blue;
+  }
+}

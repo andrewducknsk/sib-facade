@@ -1,0 +1,14 @@
+.header {
+  width: 100%;
+  background: #fff;
+  &__overlay {
+    background: rgba(0, 0, 0, 0.3);
+  }
+  &__title {
+    padding: 20px;
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    color: gold;
+  }
+}
