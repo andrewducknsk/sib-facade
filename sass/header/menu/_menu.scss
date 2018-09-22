@@ -1,0 +1,20 @@
+.menu {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px 0;
+    &__wrapper {
+        padding: 0 25px;
+    }
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        max-width: 700px;
+    }
+    &__link {
+        display: inline-block;
+        width: 100%;
+        padding: 0 15px;
+        color: #fff;
+        @include link__reaction;
+    }
+}

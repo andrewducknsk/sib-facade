@@ -1,7 +1,10 @@
 @import "_scaffolding.scss",
         "_mixin.scss";
 
-@import "./header/_header.scss";
+@import "./header/_header.scss",
+        "./header/menu/_menu.scss";
+
+@import "./greeting/_greeting.scss";
 
 @import "./main/_main.scss",
         "./main/constructions/_constructions.scss",
@@ -12,6 +15,8 @@
 @import "./main/documentation/_documentation.scss";
 
 @import "./main/work-performed/_work-performed.scss";
+
+@import "./main/up/_up.scss";
 
 @import "./footer/_footer.scss",
         "./footer/contact/_contact.scss",

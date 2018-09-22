@@ -23,4 +23,31 @@
 @mixin image__item {
   margin: 0 15px;
   margin-bottom: 30px;
+  transition: .2s transform;
+    &:hover {
+      transform: scale(1.05, 1.05);
+    }
 };
+
+@mixin list {
+  padding-left: 35px;
+  list-style-type: disc;
+}
+
+@mixin item {
+  margin-bottom: 15px;
+}
+
+@mixin underline {
+  text-decoration: underline;
+}
+
+@mixin link__reaction {
+  transition: .3s opacity, .25s color;
+        &:hover {
+            opacity: .7;
+        }
+        &:active{
+            color: grey;
+        }
+}

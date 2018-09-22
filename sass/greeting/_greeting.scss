@@ -1,0 +1,39 @@
+.greeting {
+    background: url('../../img/bg-greeting.jpg') no-repeat center;
+    background-size: cover;
+    &__overlay {
+        position: relative;
+        background: rgba(0, 0, 0, .9);
+        &:after {
+            content: '';
+            position: absolute;
+            display: block;
+            bottom: 40px;
+            left: 50%;
+            width: 15px;
+            height: 15px;
+            margin-left: -7.5px;
+            border-left: 2px solid #fff;
+            border-bottom: 2px solid #fff;
+            transform: rotate(-45deg);
+        }
+    }
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100vh;
+    }
+    &__title {
+        font-size: 40px;
+        line-height: 46px;
+        text-align: center;
+        color: #fff;
+    }
+    &__description {
+        margin: 0;
+        font-size: 22px;
+        text-align: center;
+        color: #fff;
+    }
+}

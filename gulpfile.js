@@ -103,5 +103,5 @@ gulp.task('serve', function () {
   });
   gulp.watch('./sass/**/*.scss', ['style']).on('change', server.reload);
   gulp.watch('./*.html', ['html']).on('change', server.reload);
-  gulp.watch('./*js', ['js']);//.on('change'. server.reload);
+  gulp.watch('./js/**/*.js', ['js']).on('change', server.reload);
 });

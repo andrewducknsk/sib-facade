@@ -1,4 +1,5 @@
 .contact {
+  color: #fff;
   &__title {
     margin-bottom: 10px;
     font-size: 20px;
@@ -11,6 +12,8 @@
   }
   &__tel,
   &__mail {
-    color: blue;
+    color: #fff;
+    text-decoration: underline;
+    @include link__reaction;
   }
 }

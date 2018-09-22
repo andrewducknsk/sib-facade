@@ -4,19 +4,15 @@
     @include title;
   }
   &__list {
-    //margin-left: 15px;
-    list-style: circle outside;
+    @include list;
   }
   &__item {
-    margin-bottom: 15px;
+    @include item;
   }
   &__text {
     @include description;
-    &--list {
-      //margin: 0 15px 0;
-    }
   }
   &__text--underline {
-    text-decoration: underline;
+    @include underline;
   }
 }

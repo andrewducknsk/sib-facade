@@ -4,7 +4,16 @@
   &__title {
     @include title;
   }
+  &__list {
+    @include list;
+  }
+  &__item {
+    @include item;
+  }
   &__text {
     @include description;
+  }
+  &__text--underline {
+    @include underline;
   }
 }
