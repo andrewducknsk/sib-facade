@@ -1,7 +1,11 @@
 .footer {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  padding: 30px;
-  background: #090e10;
+  background: linear-gradient(120deg, #060c14 10%, #232422 50%);
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    height: 100vh;
+    padding: 40px 0 50px;
+  }
 }

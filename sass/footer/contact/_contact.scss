@@ -1,14 +1,15 @@
 .contact {
   color: #fff;
+  padding-left: 40px;
   &__title {
     margin-bottom: 10px;
-    font-size: 20px;
+    font-size: 26px;
   }
   &__text {
     margin: 0;
     margin-bottom: 8px;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 20px;
+    line-height: 24px;
   }
   &__tel,
   &__mail {

@@ -8,12 +8,14 @@
     &__list {
         display: flex;
         justify-content: space-between;
-        max-width: 700px;
+        max-width: 750px;
     }
     &__link {
         display: inline-block;
         width: 100%;
         padding: 0 15px;
+        font-size: 18px;
+        line-height: 22px;
         color: #fff;
         @include link__reaction;
     }
