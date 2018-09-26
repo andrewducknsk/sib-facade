@@ -6,14 +6,14 @@ var main = document.querySelector('.main-js');
 var mainPosition = main.getBoundingClientRect().top;
 
 window.addEventListener('scroll', function() {
-    var scrolled = window.pageYOffset;
+    var scrolled = window.pageYOffset + 1;
 
     if (scrolled > mainPosition) {
         upBtn.classList.remove('up--none');
     } else {
         upBtn.classList.add('up--none');
     }
-})
+});
 
 
 window.history.replaceState({initial: true}, "");
@@ -31,7 +31,7 @@ $('.up-js-btn').on("click", function(e) {
         scrollTo(false);
 });
 
-$(".menu a").on("click", function(e) {
+$(".menu a, .greeting a").on("click", function(e) {
     e.preventDefault();
 
     var $self = $(this);
@@ -73,4 +73,15 @@ function getLocation(href) {
     l.href = href;
 
     return l;
-};
+}
+
+(function () {
+    $(document).ready(function () {
+        $('.lightzoom').lightzoom({
+            speed: 350,
+            viewTitle: true,
+            isOverlayClickClosing: true,
+            isEscClosing: true
+        });
+    });
+})();

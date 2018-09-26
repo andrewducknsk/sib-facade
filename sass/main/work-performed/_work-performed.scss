@@ -9,5 +9,6 @@
   }
   &__item {
     @include image__item;
+    width: 100%;
   }
 }

@@ -17,12 +17,11 @@
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  align-items: center;
   padding: 20px 0;
 }
 
 @mixin image__item {
-  margin: 0 15px;
-  margin-bottom: 30px;
   transition: .2s transform;
     &:hover {
       transform: scale(1.05, 1.05);
