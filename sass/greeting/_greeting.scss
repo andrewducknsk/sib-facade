@@ -1,10 +1,10 @@
 .no-webp .greeting {
-    background: url("../../img/bg-greeting.jpg") no-repeat center;
+    background: url("../img/bg-greeting.jpg") no-repeat center;
     background-size: cover;
 }
 
 .greeting {
-    background: url('../../img/bg-greeting.webp') no-repeat center;
+    background: url('../img/bg-greeting.webp') no-repeat center;
     background-size: cover;
     &__overlay {
         position: relative;
