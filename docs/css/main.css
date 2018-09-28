@@ -226,21 +226,21 @@ h6 {
     background: rgba(0, 0, 0, 0.85); }
   .greeting__next-screen {
     position: absolute;
-    display: block;
-    bottom: 40px;
+    bottom: 50px;
     left: 50%;
-    width: 20px;
-    height: 20px;
+    width: 23px;
+    height: 23px;
     margin-left: -7.5px;
     font-size: 0;
     border-left: 2px solid #fff;
     border-bottom: 2px solid #fff;
-    -webkit-transform: rotate(-45deg);
-            transform: rotate(-45deg);
     -webkit-transition: .2s opacity;
     transition: .2s opacity;
-    -webkit-animation: next-screen 1.7s infinite ease;
-            animation: next-screen 1.7s infinite ease;
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    will-change: transform;
+    -webkit-animation: next-screen 2s infinite ease-in-out;
+            animation: next-screen 2s infinite ease-in-out;
     -webkit-animation-direction: alternate;
             animation-direction: alternate; }
     .greeting__next-screen:hover {
@@ -271,20 +271,32 @@ h6 {
     color: #fff; }
 
 @-webkit-keyframes next-screen {
+  from {
+    -webkit-transform: translateY(0px) rotate(-45deg);
+            transform: translateY(0px) rotate(-45deg); }
   50% {
-    bottom: 42px; } }
+    -webkit-transform: translateY(-10px) rotate(-45deg);
+            transform: translateY(-10px) rotate(-45deg); }
+  to {
+    -webkit-transform: translateY(0px) rotate(-45deg);
+            transform: translateY(0px) rotate(-45deg); } }
 
 @keyframes next-screen {
+  from {
+    -webkit-transform: translateY(0px) rotate(-45deg);
+            transform: translateY(0px) rotate(-45deg); }
   50% {
-    bottom: 42px; } }
+    -webkit-transform: translateY(-10px) rotate(-45deg);
+            transform: translateY(-10px) rotate(-45deg); }
+  to {
+    -webkit-transform: translateY(0px) rotate(-45deg);
+            transform: translateY(0px) rotate(-45deg); } }
 
 .main__wrapper {
   max-width: 1300px;
   margin: 0 auto;
   background: #fff;
-  border-bottom: 1px solid grey;
-  -webkit-box-shadow: 0 2px 5px 0 #000;
-          box-shadow: 0 2px 5px 0 #000; }
+  border-bottom: 1px solid grey; }
 
 .constructions {
   padding: 20px 35px 35px;

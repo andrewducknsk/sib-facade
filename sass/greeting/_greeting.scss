@@ -12,18 +12,18 @@
     }
     &__next-screen {
         position: absolute;
-        display: block;
-        bottom: 40px;
+        bottom: 50px;
         left: 50%;
-        width: 20px;
-        height: 20px;
+        width: 23px;
+        height: 23px;
         margin-left: -7.5px;
         font-size: 0;
         border-left: 2px solid #fff;
         border-bottom: 2px solid #fff;
-        transform: rotate(-45deg);
         transition: .2s opacity;
-        animation: next-screen 1.7s infinite ease;
+        transform: rotate(-45deg);
+        will-change: transform;
+        animation: next-screen 2s infinite ease-in-out;
         animation-direction: alternate;
         &:hover {
             opacity: .65;
@@ -52,5 +52,15 @@
 }
 
 @keyframes next-screen {
-    50% {bottom: 42px}
+    from {
+        transform: translateY(0px) rotate(-45deg)
+    }
+
+    50% {
+        transform: translateY(-10px) rotate(-45deg)
+    }
+
+    to {
+        transform: translateY(0px) rotate(-45deg)
+    }
 }
