@@ -17,7 +17,7 @@
         speed:                  400,
         imgPadding:             10,
         overlayOpacity:         '0.5',
-        viewTitle:              false,
+        viewTitle:              true,
         isOverlayClickClosing:  false,
         isWindowClickClosing:   false,
         isEscClosing:           false
@@ -89,11 +89,11 @@
           $( 'body' ).append( html );
 
           var lz      = $( '#lz-box' ),
-            img       = $(this).children('img'),
+            picture       = $(this).children('picture'),
             src       = $(this).attr('href'),
             overlayCss = {};
 
-          var title = img.attr('title');
+          var title = picture.attr('title');
 
           overlayCss = {
             opacity : $this.settings.overlayOpacity
