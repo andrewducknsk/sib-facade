@@ -34,12 +34,14 @@
         flex-direction: column;
         justify-content: center;
         height: 100vh;
-        padding: 0 20%;
+        padding: 0 5%;
     }
     &__title {
+        align-self: center;
+        max-width: 350px;
         margin-bottom: 25px;
-        font-size: 3vw;
-        line-height: 3.5vw;
+        font-size: 20px;
+        line-height: 1.1;
         text-align: center;
         color: #fff;
     }
@@ -48,6 +50,23 @@
         font-size: 22px;
         text-align: center;
         color: #fff;
+    }
+}
+
+@media (min-width: 800px) {
+    .greeting {
+        &__wrapper {
+            padding: 0 20%;
+        }
+
+        &__title {
+            max-width: 100%;
+            margin-bottom: 25px;
+            font-size: 38px;
+            line-height: 1.2;
+            text-align: center;
+            color: #fff;
+        }
     }
 }
 
