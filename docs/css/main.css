@@ -534,7 +534,7 @@ h6 {
 .copyright {
   -ms-flex-item-align: end;
       align-self: flex-end;
-  padding-right: 40px; }
+  padding: 0 40px; }
   .copyright__text {
     margin: 0;
     margin-bottom: 8px;
