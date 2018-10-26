@@ -9,6 +9,14 @@
   }
 }
 
+@media (min-width: 800px) {
+  .lightzoom {
+    &__documentation {
+      width: 25%;
+    }
+  }
+}
+
 #lz-container {
   display: block;
   height: 100%;

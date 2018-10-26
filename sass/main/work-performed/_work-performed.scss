@@ -12,3 +12,12 @@
     width: 100%;
   }
 }
+
+@media (min-width: 800px) {
+  .work-performed {
+    @include padding__desktop;
+    &__title {
+      @include title__desktop;
+    }
+  }
+}

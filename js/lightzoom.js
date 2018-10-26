@@ -88,9 +88,9 @@
 
           $( 'body' ).append( html );
 
-          var lz      = $( '#lz-box' ),
-            picture       = $(this).children('picture'),
-            src       = $(this).attr('href'),
+          var lz = $( '#lz-box' ),
+            picture = $(this).children('picture'),
+            src = $(this).attr('href'),
             overlayCss = {};
 
           var title = picture.attr('title');
@@ -155,11 +155,11 @@
         var winHeight = window.innerHeight ? window.innerHeight : $( window ).height();
 
         if ( winWidth > winHeight ) {
-          width  = "100%";
-          height = "80%";
+            width  = "80%";
+            height = "95%";
         } else {
-          width  = "80%";
-          height = "100%";
+            width  = "100%";
+            height = "80%";
         }
 
 				// Reset dimensions on mobile orientation change

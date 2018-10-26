@@ -40,6 +40,10 @@ h6 {
   .lightzoom__documentation {
     width: 35%; }
 
+@media (min-width: 800px) {
+  .lightzoom__documentation {
+    width: 25%; } }
+
 #lz-container {
   display: block;
   height: 100%;
@@ -433,6 +437,10 @@ h6 {
   border: none;
   border-radius: 15px; }
 
+@media (min-width: 800px) {
+  .constructions {
+    padding: 20px 35px 35px; } }
+
 .easily-discarded {
   margin-bottom: 25px; }
   .easily-discarded__title {
@@ -516,7 +524,7 @@ h6 {
     font-size: 18px; } }
 
 .documentation {
-  padding: 20px; }
+  padding: 25px 20px 35px; }
   .documentation__title {
     margin-bottom: 15px;
     font-size: 18px;
@@ -542,6 +550,12 @@ h6 {
     .documentation__item:hover {
       -webkit-transform: scale(1.05, 1.05);
               transform: scale(1.05, 1.05); }
+
+@media (min-width: 800px) {
+  .documentation {
+    padding: 20px 35px 35px; }
+    .documentation__title {
+      font-size: 24px; } }
 
 .work-performed {
   padding: 25px 20px 35px;
@@ -572,6 +586,12 @@ h6 {
     .work-performed__item:hover {
       -webkit-transform: scale(1.05, 1.05);
               transform: scale(1.05, 1.05); }
+
+@media (min-width: 800px) {
+  .work-performed {
+    padding: 20px 35px 35px; }
+    .work-performed__title {
+      font-size: 24px; } }
 
 .up {
   position: fixed;

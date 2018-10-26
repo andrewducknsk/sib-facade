@@ -71,3 +71,7 @@
 @mixin text__desktop {
   font-size: 18px;
 }
+
+@mixin padding__desktop {
+  padding: 20px 35px 35px;
+}

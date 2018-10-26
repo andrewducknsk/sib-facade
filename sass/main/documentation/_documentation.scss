@@ -1,5 +1,5 @@
 .documentation {
-  padding: 20px;
+  padding: 25px 20px 35px;
   &__title {
     @include title;
   }
@@ -10,5 +10,14 @@
 
   &__item {
     @include image__item;
+  }
+}
+
+@media (min-width: 800px) {
+  .documentation {
+    @include padding__desktop;
+    &__title {
+      @include title__desktop;
+    }
   }
 }
