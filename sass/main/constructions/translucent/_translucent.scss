@@ -17,3 +17,14 @@
     @include underline;
   }
 }
+
+@media (min-width: 800px) {
+  .translucent {
+    &__title {
+      @include title__desktop;
+    }
+    &__text {
+      @include text__desktop;
+    }
+  }
+}

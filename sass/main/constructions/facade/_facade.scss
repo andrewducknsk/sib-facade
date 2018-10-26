@@ -16,3 +16,14 @@
     @include underline;
   }
 }
+
+@media (min-width: 800px) {
+  .facade {
+    &__title {
+      @include title__desktop;
+    }
+    &__text {
+      @include text__desktop;
+    }
+  }
+}

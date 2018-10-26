@@ -1,19 +1,39 @@
 .map {
   width: 100%;
-  padding-bottom: 25px;
   &__title {
     margin-bottom: 15px;
-    padding-left: 40px;
-    font-size: 26px;
-    line-height: 30px;
+    padding-left: 20px;
+    font-size: 20px;
+    line-height: 1.1;
     color: #fff;
   }
   &__text {
     margin: 0;
-    margin-bottom: 35px;
-    padding-left: 40px;
-    font-size: 20px;
-    line-height: 24px;
+    padding-left: 20px;
+    font-size: 16px;
+    line-height: 1.35;
     color: #fff;
   }
+  &__content {
+    display: none;
+  }
 }
+
+@media (min-width: 800px) {
+  .map {
+    padding-bottom: 25px;
+    &__title {
+      padding-left: 40px;
+      font-size: 26px;
+    }
+    &__text {
+      margin-bottom: 35px;
+      padding-left: 40px;
+      font-size: 20px;
+    }
+    &__content {
+      display: block;
+    }
+  }
+}
+

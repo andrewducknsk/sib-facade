@@ -1,11 +1,19 @@
 .footer {
-  //background: linear-gradient(120deg, #060c14 10%, #232422 50%);
   &__wrapper {
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    flex-direction: column;
     flex-wrap: wrap;
-    height: 100vh;
     padding: 40px 0 50px;
+    height: 100vh;
+  }
+}
+
+@media (min-width: 800px) {
+  .footer {
+    &__wrapper {
+      flex-direction: row;
+      align-items: flex-end;
+    }
   }
 }

@@ -1,20 +1,37 @@
 .contact {
   color: #fff;
-  padding-left: 40px;
+  padding-left: 20px;
   &__title {
     margin-bottom: 10px;
-    font-size: 26px;
+    font-size: 20px;
   }
   &__text {
     margin: 0;
     margin-bottom: 8px;
-    font-size: 20px;
-    line-height: 24px;
+    font-size: 16px;
+    line-height: 1.35;
   }
   &__tel,
   &__mail {
     color: #fff;
     text-decoration: underline;
     @include link__reaction;
+  }
+}
+
+@media (min-width: 800px) {
+  .contact {
+    color: #fff;
+    padding-left: 40px;
+    &__title {
+      margin-bottom: 10px;
+      font-size: 26px;
+    }
+    &__text {
+      margin: 0;
+      margin-bottom: 8px;
+      font-size: 20px;
+      line-height: 24px;
+    }
   }
 }

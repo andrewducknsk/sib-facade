@@ -1,22 +1,110 @@
 .menu {
-    display: flex;
-    justify-content: flex-end;
-    padding: 20px 0;
-    &__wrapper {
-        padding: 0 25px;
-    }
-    &__list {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    &__mobile {
         display: flex;
-        justify-content: space-between;
-        max-width: 750px;
+        justify-content: flex-end;
+        height: 55px;
+        background: #415c6d;
+        padding: 10px 20px 0;
+        border-bottom: 1px solid #000;
+    }
+    &__btn {
+        position: relative;
+        display: block;
+        width: 30px;
+        height: 30px;
+        font-size: 0;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        transition: ease .2s;
+        &:after {
+            @include menu__btn;
+            transform: rotate(-45deg);
+        }
+        &:before {
+            @include menu__btn;
+            transform: rotate(45deg);
+        }
+        &:hover {
+            opacity: .8;
+        }
     }
     &__link {
         display: inline-block;
         width: 100%;
-        padding: 0 15px;
-        font-size: 18px;
-        line-height: 22px;
+        padding: 12.5px 0;
+        text-align: center;
+        font-size: 20px;
+        line-height: 1.2;
         color: #fff;
-        @include link__reaction;
+        background: #415c6d;
+        border-bottom: 1px solid #000;
+        &:hover,
+        &:active {
+            opacity:  .8;
+        }
+    }
+}
+
+.menu--closed {
+    .menu {
+        &__mobile {
+            background: rgba(65, 92, 109, .3);
+        }
+        &__btn {
+            &:after {
+                @include menu__btn;
+                top: -10px;
+                left: 14px;
+                height: 31px;
+                transform: rotate(-90deg);
+                box-shadow: -10px 0 0 0 #fff,
+                            -20px 0 0 0 #fff;
+            }
+            &:before {
+                content: none;
+            }
+        }
+        &__list {
+            display: none;
+        }
+    }
+}
+
+@media (min-width: 800px) {
+    .menu--closed {
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+        padding: 20px 0;
+        .menu {
+            &__wrapper {
+                padding: 0 25px;
+            }
+            &__mobile {
+                display: none;
+            }
+            &__list {
+                display: flex;
+                justify-content: space-between;
+                max-width: 750px;
+            }
+            &__link {
+                display: inline-block;
+                width: 100%;
+                padding: 0 15px;
+                text-align: left;
+                font-size: 18px;
+                line-height: 22px;
+                color: #fff;
+                background: transparent;
+                border-bottom: none;
+                @include link__reaction;
+            }
+        }
     }
 }

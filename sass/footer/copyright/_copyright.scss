@@ -1,10 +1,19 @@
 .copyright {
-  align-self: flex-end;
+  align-self: flex-start;
   padding: 0 40px;
   &__text {
     margin: 0;
     margin-bottom: 8px;
-    font-size: 18px;
+    font-size: 14px;
     color: #fff;
+  }
+}
+
+@media (min-width: 800px) {
+  .copyright {
+    align-self: flex-end;
+    &__text {
+      @include text__desktop;
+    }
   }
 }
