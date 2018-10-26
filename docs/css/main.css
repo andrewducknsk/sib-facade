@@ -36,9 +36,9 @@ h6 {
   margin: 0 15px 30px;
   cursor: pointer; }
   .lightzoom__work {
-    width: 25%; }
-  .lightzoom__documentation {
     width: 30%; }
+  .lightzoom__documentation {
+    width: 35%; }
 
 #lz-container {
   display: block;
