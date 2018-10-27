@@ -93,9 +93,9 @@ function getLocation(href) {
     $(document).ready(function () {
         $('.lightzoom').lightzoom({
             speed: 350,
+            overlayOpacity: 0.89,
             viewTitle: true,
-            isOverlayClickClosing: true,
-            isEscClosing: true
+            isWindowClickClosing: true
         });
     });
 })();
