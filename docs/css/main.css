@@ -746,4 +746,9 @@ h6 {
       padding-left: 40px;
       font-size: 20px; }
     .map__content {
-      display: block; } }
+      display: block;
+      height: 350px; } }
+
+@media (min-height: 800px) {
+  .map__content {
+    height: 500px; } }

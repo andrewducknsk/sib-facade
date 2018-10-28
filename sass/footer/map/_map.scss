@@ -33,7 +33,15 @@
     }
     &__content {
       display: block;
+      height: 350px;
     }
   }
 }
 
+@media  (min-height: 800px) {
+  .map {
+    &__content {
+      height: 500px;
+    }
+  }
+}
